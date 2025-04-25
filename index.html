@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+   <!-- MENU ENCABEZADO -->
+   <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">Jonathan</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#tecnologias" onclick="seleccionar()">TEGNOLOGIAS</a></li>
+                <li><a href="#mis-actividades" onclick="seleccionar()">ACTIVIDADES</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+  
+  <section id="sobre-mi">
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+          <div class="contenedor-img">
+              <img src="/jonathan mi foto.jpg" alt="">
+          </div>
+          <h1>Jonathan Cadena</h1>
+          <h2></h2>
+          <div class="redes">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-solid fa-rss"></i></a>
+          </div>
+      </div>
+  </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+          <h2>Sobre Mí</h2>
+          <p><span>Hola, soy Jonathan Cadena.</span>vivo en colombia,Boyacá,Tunja, tengo 31 años
+          me encuentro haciendo una carrera en la universidad utel virtual Licenciatura en Ingeniería de sistemas computacional las clases son en la noche tengo dos hermosas
+          princesas me apasiona mucho la tecnología aprendo rápido siempre le busco solución a las cosas
+          </p>
+   <!--MIS TECNOLOGIAS FAVORITAS-->
+   <section id="tecnologias" class="tecnologia">
+    <h2>Mis Tecnologías Favoritas</h2>
+    <div class="contenido-section">
+      <img id="img1" src="/img/imagenhtmlejemplo.webp" width="100px" alt="htm1">
+      <p>Tecnología 1</p>
+    </div>
+    <div class="card-img2">
+      <img id="img2" src="/img/descarga (1).png" width="100px" alt="CSS2">
+      <p>Tecnología 2</p>
+    </div>
+    <div class="card-img3">
+      <img id="img3" src="/img/descarga (3).png" width="100px" alt="js 3">
+      <p>Tecnología 3</p>
+    </div>
+</section>
+
+
+  <!--MIS ACTIVIDADES FAVORITAS-->
+  <section id="mis-actividades" class="section">
+    <h2>Mis Actividades Favoritas</h2>
+    <div class="input-container">
+      <input id="titleInput" type="text" placeholder="Título">
+      <textarea id="descriptionInput" placeholder="Descripción"></textarea>
+      <input id="imgUrlInput" type="text" placeholder="URL de imagen">
+      <button onclick="agregarActividad()">Agregar Actividad</button>
+    </div>
+    <!--activities-container-->
+    <div id="activities-container">
+
+
+    </div>
+  </section>
+</body>
+<script src="/scripts/index.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/Repository.js"></script>
+  <script src="/scripts/instancia-Dom.js"></script>
+</html>
+ 
